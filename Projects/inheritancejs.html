@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        Java Script Inheritance 
+    </title>
+    <script type="text/javascript">
+    class Student extends Date{
+        constructor(){
+            super();
+        }
+    }
+     var currentDate= new Student();
+     console.log(currentDate.getDate());
+     var x= currentDate.getFullYear()+ "-" +currentDate.getMonth()+"-"+currentDate.getDate();
+
+    function loadData(){
+        document.getElementById("test-metho").innerHTML = x;
+     
+    }
+    </script>
+    
+</head>
+
+<body onload="loadData()">
+    <h1>Javascript Inheritance </h1>
+        <p id="test-metho"></p>       
+</body>
+
+</html>

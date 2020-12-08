@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>
+        Java Script first project
+    </title>
+
+    <script src="testJsFile.js" type="text/javascript">
+ //use to link testJsFile.js file   
+    </script>
+    <script type="text/javascript">
+        document.write("Emberded js methord. documant.write -> documant is an object and write is a methord ");
+
+        //js basic function
+        function add(a, b) {
+            var total = a + b;
+            document.write("<h3>Function running :- " + total + "</h3>");
+            return total;
+
+        }
+        function arr() {
+            var cars = ["BMW", "Benz", "Toyota"];
+            cars.push("Audi");
+            for (var i = 0; i < cars.length; i++) {
+                document.write("<h2>" + cars[i] + "</h2>");
+            }
+
+        }
+
+        //implemant js function, we canuse return and perameters also 
+        add(20, 30);
+        arr();
+
+    </script>
+</head>
+<body>
+    <h1>Java script lerning project </h1>
+</body>
+</html>

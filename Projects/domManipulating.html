@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+
+
+    <script type="text/javascript">
+
+    function domAlert(){
+        alert("Done");
+    }
+    function changeHeader(){
+      //  document.getElementById("header1").innerHTML="New Header";
+        var getName = document.getElementById("name").value;
+        alert(getName);
+    }
+        
+    </script>
+</head>
+
+<body>
+    <h1 id="header1">Java script DOM  </h1>
+    <button onclick="domAlert()">Click me!</button>
+    <button onclick="changeHeader()">Change Header</button><br>
+    <br><br>
+    <input id="name" placeholder="Enter name" />
+</body>
+
+</html>

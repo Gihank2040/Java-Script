@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>
+        Java Script Encapsulation 
+    </title>
+    <script type="text/javascript">
+    class Student{
+
+        constructor(){
+            var name;
+            var marks;
+        }
+
+        getName(){
+            return this.name;
+        } 
+
+        setName(name){
+            if(name.length >= 10){ 
+                window.alert("invalid Name"); 
+                this.name = "invalid Name";
+            }else{
+                this.name=name;
+            }
+
+           
+
+        }
+
+        getMarks(){
+            return fthis.marks;
+        }
+
+        setMarks(marks){
+            this.marks=marks;
+        } 
+    }
+
+    var stuObj= new Student();
+    stuObj.setName("invalid Name john");
+    var studentName= stuObj.getName();
+  
+   function onloadfun(){
+    document.getElementById("test-metho").innerHTML= studentName;
+   }
+
+    </script>
+    
+</head>
+
+<body onload="onloadfun()">
+    <h1>Javascript Encapsulation </h1>
+        <p id="test-metho" value={{studantame}}></p>
+        
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+    <script type="text/javascript">
+    class test{
+        constructor(){
+            //invoke a static method within the constructor
+           console.log(test.display());
+        }
+        static display(){
+            document.getElementById("test-metho").innerHTML="static method is invoked";
+            console.log("test done");
+            return "static method is invoked";
+        }
+
+        //invoke a static method within the non-static method
+        show(){
+            test.display();
+        }
+    }
+
+
+    //if we want to implemant nonstatic method, first we need to create class instance
+    var t= new test();
+    t.show();
+
+   
+
+    </script>
+    
+</head>
+
+<body onload="test.display()">
+    <h1>Javascript static method</h1>
+        <p id="test-metho"></p>
+        
+
+
+</body>
+
+</html>

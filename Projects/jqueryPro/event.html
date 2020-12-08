@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+<link rel="stylesheet" href="css/styleCSS.css">
+
+
+</head>
+
+<body>
+   
+    <h1 id="header02">Jquery Events</h1><br>
+    <button id="btn">Click Me</button>
+
+</body>
+<script src="jquery/jquery.js"></script>
+    <script>
+$(document).ready(function(){ 
+    function fn1(){
+         $("h1").fadeToggle();
+        }
+
+        $("#btn").click(fn1);
+});   
+    </script>
+
+</html>

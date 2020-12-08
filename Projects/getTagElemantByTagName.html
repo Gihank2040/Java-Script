@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+
+
+    <script type="text/javascript">
+
+    function changePraProperties(){
+        var pera = document.getElementsByTagName("p");
+       // pera[0].style.color = "red";
+        pera[1].style.background.color = "blue";
+   
+
+        for(var x=0; x<pera.length;x++){
+            pera[x].style.fontSize = 20;
+           // pera[x].style.color = "white";
+        }
+
+      
+    }
+    </script>
+</head>
+
+<body id="body01">
+    <h1 id="header1">Get elemant by tag</h1><br><br>
+
+    <p>This is paragraph 01</p><br>
+    <p>This is paragraph 02</p><br>
+    <p>This is paragraph 03</p><br>
+    <p>This is paragraph 04</p><br>
+    <p>This is paragraph 05</p><br>
+    <br><br>
+    <button onclick="changePraProperties()">Change pera Pro</button>
+</body>
+
+</html>

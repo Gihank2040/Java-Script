@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+
+
+    <script type="text/javascript">
+
+    function checkRadioValue(){
+        var value1=document.getElementById("rdo1");
+        var value2=document.getElementById("rdo2");
+        var alerttxt=value1.checked? "choice one selected": "choice two selected"
+        alert(alerttxt);
+    }
+    </script>
+</head>
+
+<body>
+    <h1 id="header1">Get Radio button values</h1><br><br>
+  
+    <input type="radio" value="value01" name="grp" id="rdo1">Value01</input><br>
+    <input type="radio" value="value02" name="grp" id="rdo2">Value 02</input><br>
+    <button onclick="checkRadioValue()" id="button">Click me!</button>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+
+
+    <script type="text/javascript">
+    function validation(){
+        var userName = document.getElementById("name").value;
+        var password = document.getElementById("pass");
+        var regex =/E00/;
+
+         if (regex.test(userName)) {
+      
+             return true;
+   /*      }else if (password.value==null || password.value.trim()==""){
+            alert("password must included");
+            document.getElementById("lblPass").style.visibility = "visible";
+           
+            return false;
+        
+         */ }
+         else{
+            alert("Invalid user name");
+            document.getElementById("lblName").style.visibility = "visible";
+             return false;
+    
+         }
+    }
+
+    </script>
+</head>
+
+<body id="body01">
+    <h1 id="header1">Java script form validation</h1><br>
+    <form  onsubmit="return validation()" action="welcomeMessage.html">
+        <input id="name" type="text"  placeholder="User Name" /><label id="lblName" style="color:red; visibility: hidden;">Invalid</label></label><br><br>
+        <input id="pass" placeholder="Password" type="password" /><label  id="lblPass" style="color:red; visibility: hidden;">Invalid</label></label><br><br>  
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

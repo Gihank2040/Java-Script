@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+
+
+    <script type="text/javascript">
+        class ClassImpl{
+
+            //class cons
+            constructor(id,implType){
+                this.id=id;
+                this.implType=implType;
+            }
+            //class method
+            detail(){
+                var x = this.implType;
+                document.getElementById("detail-class").innerHTML= x;
+               // document.getElementById("detail-class").innerHTML="test";
+            }
+
+            
+        }
+        //define class using expression
+        let student= class Student extends ClassImpl{
+            constructor(){
+                super();
+            }
+            
+        }
+        //calling class methord in outside function
+        function xx(id2, name2){
+            document.getElementById("expression-class").innerHTML= " Student expression-class name is "+student.name+ " ";
+            var obj01 = new ClassImpl(id2, name2);
+            obj01.detail();
+        }
+
+     
+  
+    </script>
+</head>
+
+<body onload="xx(1,'Strict mode for functions')">
+    <h1>Javascript class constructor and method</h1>
+    <p>ref:- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</p>
+    
+    <div>
+        <h3>Class body and method definitions</h3>
+        <p id="detail-class"></p>
+        <p id="expression-class"></p>    
+    </div>      
+</body>
+</html>

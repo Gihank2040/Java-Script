@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+
+
+    <script type="text/javascript">
+    function validation(){
+        var userName = document.getElementById("name");
+        var password = document.getElementById("pass");
+
+         if (userName.value==null || userName.value.trim()=="") {
+             alert("User name must included");
+             return false;
+         }else if (password.value==null || password.value.trim()==""){
+            alert("password must included");
+            return false;
+         }else{
+             return true;
+         }
+    }
+
+    </script>
+</head>
+
+<body id="body01">
+    <h1 id="header1">Java script form validation</h1><br>
+    <form  onsubmit="return validation()" action="welcomeMessage.html">
+        <input id="name" placeholder="User Name" type="text" /><br><br>
+        <input id="pass" placeholder="Password" type="password" /><br><br>  
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

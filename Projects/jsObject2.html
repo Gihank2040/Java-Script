@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>
+        Java Script objects
+    </title>
+    <script type="text/javascript">
+    //By object literal
+    student={"id": 1, name: "Gihan", age: "26"}
+
+    //By creating instance of Object
+    var emp = new Object();
+    emp.name="Ravi Kumar"; 
+    var stu;
+
+    //By using an Object constructor
+    function salaryFun(id,name,salary,bonas){  
+    this.id=id;  
+    this.name=name;  
+    this.salary=salary; 
+    this.bonas=bonas;
+    return salary+bonas;
+} 
+
+
+    function fillDocument(){
+      //  alert(student.name);
+       document.getElementById("stu-details").value= emp.name;
+       var salarySum = salaryFun(01,"ravi", 20000, 5500);
+       document.getElementById("st-de").innerHTML=student.id+" " +student.name+" "+student.age;
+       document.getElementById("emp-salary").innerHTML=salarySum;
+    }
+    
+    </script>
+    
+</head>
+
+<body>
+    <h1>Java script lerning project : Objects </h1>
+    <p>By object literal /
+        By creating instance of Object directly (using new keyword) /
+        By using an object constructor (using new keyword)</p>
+
+        <input id="stu-details"></input>
+        <p id="st-de"></p>
+        <p id="emp-salary"></p>
+        
+        <button onclick="fillDocument()">Student Name</button>
+      
+
+</body>
+
+</html>
